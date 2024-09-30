@@ -1,6 +1,6 @@
 <h1 align="center">Kalimah Tools</h1>
 <p align="center">
-<img src="https://raw.githubusercontent.com/kalimah-apps/tools/main/public/logo.svg" width="120" alt="Kalimah Tools Logo">
+<img src="https://raw.githubusercontent.com/kalimahapps/tools/main/public/logo.svg" width="120" alt="Kalimah Tools Logo">
 </p>
 <p align="center">
 A collection of online tools for web development, design, and more to help you build better websites and applications.
