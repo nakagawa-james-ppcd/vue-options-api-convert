@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"noUnusedLocals": true,
+		"outDir": "dist",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"paths": {
+			"@/*": ["./*"]
+		}
+	},
+	 "include": [
+		"**/*.d.ts",
+		"**/*.vue",
+		"**/*.tsx",
+		"**/*.ts",
+		"tools/**/*.vue",
+		".vitepress/**/*.vue",
+		".vitepress/**/*.ts",
+		".vitepress/**/*.tsx",
+		".vitepress/theme/shims.d.ts"
+	],
+	"exclude": ["**/node_modules/**", "**/dist/**"],
+	"extensions": [".js", ".ts", ".tsx", ".jsx", ".vue"],
+}

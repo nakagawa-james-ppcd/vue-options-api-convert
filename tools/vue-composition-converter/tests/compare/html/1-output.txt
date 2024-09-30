@@ -1,0 +1,18 @@
+<pre class="shiki Jameel" style="background-color:#1e2429;color:#bbbbbb" tabindex="0"><code><span class="line"><span style="color:#4885D5">&#x3C;template></span></span>
+<span class="line"><span style="color:#4885D5">  &#x3C;p></span><span style="color:#BBBBBB">{{ </span><span style="color:#FACC15">greeting</span><span style="color:#BBBBBB"> }} World!</span><span style="color:#4885D5">&#x3C;/p></span></span>
+<span class="line"><span style="color:#4885D5">&#x3C;/template></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#4885D5">&#x3C;script</span><span style="color:#88EADF"> setup</span><span style="color:#4885D5">></span></span>
+<span class="line"><span style="color:#34D399">import</span><span style="color:#BBBBBB"> { </span><span style="color:#FACC15">ref</span><span style="color:#BBBBBB"> } </span><span style="color:#34D399">from</span><span style="color:#BBBBBB"> 'vue'</span><span style="color:#BBBBBB">;</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#7272729D">// Data</span></span>
+<span class="line"><span style="color:#3065B1">const</span><span style="color:#FACC15"> greeting</span><span style="color:#34D399"> =</span><span style="color:#88BCFB"> ref</span><span style="color:#BBBBBB">(</span><span style="color:#BBBBBB">"Hello"</span><span style="color:#BBBBBB">);</span></span>
+<span class="line"><span style="color:#4885D5">&#x3C;/script></span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#4885D5">&#x3C;style</span><span style="color:#88EADF"> scoped</span><span style="color:#4885D5">></span></span>
+<span class="line"><span style="color:#4885D5">p</span><span style="color:#BBBBBB"> {</span></span>
+<span class="line"><span style="color:#AC880B">  font-size</span><span style="color:#BBBBBB">: </span><span style="color:#DC9656">2</span><span style="color:#34D399">em</span><span style="color:#BBBBBB">;</span></span>
+<span class="line"><span style="color:#AC880B">  text-align</span><span style="color:#BBBBBB">: center;</span></span>
+<span class="line"><span style="color:#BBBBBB">}</span></span>
+<span class="line"><span style="color:#4885D5">&#x3C;/style></span></span></code></pre>

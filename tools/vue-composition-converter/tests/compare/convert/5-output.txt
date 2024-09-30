@@ -1,0 +1,51 @@
+<template>
+  <p>template data</p>
+</template>
+
+<script setup>
+import { reactive, watch } from 'vue';
+
+
+// Data
+const items = reactive([]);
+const list = reactive({});
+
+// Props
+const props = defineProps(['loading', 'lazy', 'disabled']);
+
+// Methods
+const isLazy = function(){
+	return props.lazy;
+}
+
+const isLoading = function(){
+	return props.loading;
+}
+
+const isDisabled = () => {
+	return props.disabled;
+}
+
+
+// Watch
+watch(loading, function(newValue){
+	console.log("Value", newValue);
+})
+
+watch(disabled, function (value) {
+	this.bar = value;
+}, { immediate: true })
+
+</script>
+
+<style scoped>
+.el-image {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+  background-color: #f5f7fa;
+  line-height: 0;
+  overflow: hidden;
+  transition: background-color .3s;
+}
+</style>
