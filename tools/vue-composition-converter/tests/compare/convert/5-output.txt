@@ -3,6 +3,7 @@
 </template>
 
 <script setup>
+import { debounce } from '@/helpers';
 import { reactive, watch } from 'vue';
 
 
@@ -25,6 +26,10 @@ const isLoading = function(){
 const isDisabled = () => {
 	return props.disabled;
 }
+
+const changeBody = debounce(function (event) {
+	console.log('debounce test');
+})
 
 
 // Watch

@@ -217,7 +217,10 @@ class MethodParser {
 			let methodBody = this.fullInput.slice(start, end);
 
 			// Make sure there is a `function` keyword before the method body
-			if (type !== 'ArrowFunctionExpression' && methodBody.trim().startsWith('function') === false){
+			if (
+				['ArrowFunctionExpression', 'CallExpression'].includes(type) === false
+				&& methodBody.trim().startsWith('function') === false
+			){
 				methodBody = `function${methodBody}`;
 			}
 
