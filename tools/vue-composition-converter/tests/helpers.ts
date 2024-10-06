@@ -19,10 +19,10 @@ const parseCode = (input: string) => {
 };
 
 const formatCode = (input: string) => {
-	const { templateContent, scriptContent, styleContent } = parseSfc(input);
+	const { templateContent, scriptContent, styleContent, styleAttributes } = parseSfc(input);
 	const result = format(parseCode(scriptContent));
 
-	const composedSfc = composeSfc(result, templateContent, styleContent);
+	const composedSfc = composeSfc(result, templateContent, styleContent, styleAttributes);
 	return composedSfc;
 };
 
