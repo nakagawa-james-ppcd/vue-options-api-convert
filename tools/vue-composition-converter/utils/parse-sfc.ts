@@ -7,7 +7,7 @@ import { parse } from '@vue/compiler-dom';
 const getAttributesString = (node: ElementNode | undefined) => {
 	return node?.props?.map((prop) => {
 	  return `${prop.name}${prop.value ? `="${prop.value.content}"` : ''}`;
-	}).join(' ') || 'scoped';
+	}).join(' ') || '';
 };
 
 /**
@@ -36,7 +36,7 @@ const parseSfc = (sfcContent:string) => {
 		templateContent: template?.innerLoc.source,
 		scriptContent: script?.innerLoc.source,
 		styleContent: style?.innerLoc.source,
-		styleAttributes
+		styleAttributes: styleAttributes || 'scoped'
 	};
 };
 
