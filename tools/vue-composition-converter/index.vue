@@ -265,7 +265,7 @@ worker.addEventListener('message', (event: any) => {
 });
 
 const processCode = () => {
-	const { scriptContent, templateContent, styleContent } = parseSfc(userInput.value);
+	const { scriptContent, templateContent, styleContent, styleAttributes } = parseSfc(userInput.value);
 
 	errorMessage.value = '';
 
@@ -302,7 +302,8 @@ const processCode = () => {
 		const compositionOutput = composeSfc(
 			updatedCode.value,
 			templateContent,
-			styleContent
+			styleContent,
+			styleAttributes
 		);
 
 		updatedCode.value = compositionOutput;
