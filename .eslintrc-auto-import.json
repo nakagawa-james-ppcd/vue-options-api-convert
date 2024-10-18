@@ -82,6 +82,12 @@
     "useTemplateRef": true,
     "parsedSfc": true,
     "parseSfc": true,
-    "composeSfc": true
+    "composeSfc": true,
+    "useGradientStore": true,
+    "cloneObject": true,
+    "presets": true,
+    "uigradients": true,
+    "webgradients": true,
+    "useInput": true
   }
 }

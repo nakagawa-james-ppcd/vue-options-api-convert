@@ -41,5 +41,10 @@ const tools = [
 		label: 'Vue Composition Converter',
 		description: 'Converts Vue 2 Options API to Vue 3 Composition API',
 	},
+	{
+		link: '/gradient-generator/info.html',
+		label: 'Gradient Generator',
+		description: 'Generate CSS gradients',
+	},
 ];
 </script>

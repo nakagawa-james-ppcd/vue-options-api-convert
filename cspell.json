@@ -4,6 +4,11 @@
 	// language - current active spelling language
 	"language": "en",
 	// words - list of words to be always considered correct
-	"words": ["Kalimah"],
+	"words": [
+		"ckpack",
+		"Kalimah",
+		"unplugin",
+		"vueuse"
+	],
 	"flagWords": []
 }

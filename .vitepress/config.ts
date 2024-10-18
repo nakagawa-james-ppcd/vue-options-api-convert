@@ -56,6 +56,10 @@ export default defineConfig({
 						text: 'Vue Composition Converter',
 						link: '/vue-composition-converter/info',
 					},
+					{
+						text: 'Gradient Generator',
+						link: '/gradient-generator/info',
+					},
 				],
 			},
 		],

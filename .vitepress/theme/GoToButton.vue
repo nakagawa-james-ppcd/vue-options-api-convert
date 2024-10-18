@@ -11,7 +11,8 @@
 				hover:border-[var(--vp-button-brand-hover-border)]
 				border-[var(--vp-c-brand-3)]
 				mx-auto
-				p-6
+				px-6
+				py-3
 				rounded-md
 				hover:text-[var(--vp-button-brand-hover-text)]"
 		>

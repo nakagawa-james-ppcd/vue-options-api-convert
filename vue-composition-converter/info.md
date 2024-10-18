@@ -7,4 +7,3 @@ The Vue Composition API is a great way to organize your code and make it more re
 This tool is helpful for converting Vue 2 code to Vue 3 using the Composition API. However, It is may not cover all edge cases. Please review the output and make sure it is correct before using it in your project.
 
 <GoToButton href="/vue-composition-converter">Go to Vue Composition API Converter</GoToButton>
-<!-- <a class="VPButton medium brand" href="/vue-composition-converter">Try it now</a> -->

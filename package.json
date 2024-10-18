@@ -9,7 +9,7 @@
 		"docs:build": "vitepress build",
 		"docs:dev": "vitepress dev",
 		"docs:preview": "vitepress preview",
-		"test": "vitest",
+		"test": "vitest --dom",
 		"test:coverage": "vitest run --coverage"
 	},
 	"dependencies": {
@@ -18,17 +18,22 @@
 		"vitest": "^2.1.1"
 	},
 	"devDependencies": {
+		"@ckpack/vue-color": "^1.6.0",
 		"@kalimahapps/eslint-config": "^1.2.91",
 		"@kalimahapps/eslint-plugin-tailwind": "^1.1.0",
 		"@kalimahapps/vue-icons": "^1.7.1",
+		"@kalimahapps/vue-popper": "^1.2.2",
 		"@types/node": "^22.7.4",
 		"@vitejs/plugin-vue": "^5.1.4",
 		"@vitest/coverage-istanbul": "^2.1.1",
+		"@vue/test-utils": "^2.4.6",
 		"@vueuse/core": "^11.1.0",
 		"acorn": "^8.12.1",
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.11.1",
 		"eslint-linter-browserify": "^9.11.1",
+		"happy-dom": "^15.7.4",
+		"sass-embedded": "^1.79.5",
 		"shiki": "^1.21.0",
 		"tailwindcss": "^3.4.13",
 		"unplugin-auto-import": "^0.18.3",
