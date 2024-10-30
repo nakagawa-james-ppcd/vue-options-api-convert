@@ -35,6 +35,10 @@ export default defineConfig({
 				link: '/',
 			},
 			{
+				text: 'Safha',
+				link: 'https://safha.kalimah-apps.com/',
+			},
+			{
 				text: 'Blog',
 				link: 'https://kalimah-apps.com/',
 			},
