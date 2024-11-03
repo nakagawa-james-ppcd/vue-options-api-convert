@@ -20,7 +20,9 @@
 			</div>
 		</template>
 		<template #layout-bottom>
-			<SafhaPromotion />
+			<ClientOnly>
+				<SafhaPromotion />
+			</ClientOnly>
 		</template>
 	</Layout>
 </template>

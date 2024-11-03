@@ -17,7 +17,7 @@
 			rounded
 			transition-all
 			dark:text-sky-200"
-		:class="canDisplay ? '-translate-x-0' : 'translate-x-full'"
+		:class="canDisplay ? 'translate-x-0' : 'translate-x-full'"
 	>
 		<div
 			class="absolute
@@ -116,7 +116,6 @@
 
 <script setup lang="ts">
 import { useStorage } from '@vueuse/core';
-const isDisplayed = ref(false);
 const counters = [
 	{
 		label: 'Components',
@@ -140,15 +139,10 @@ const canDisplay = computed(() => {
 		return true;
 	}
 
-	if (isDisplayed.value === false) {
-		return false;
-	}
-
 	return false;
 });
 
 const onCloseClick = () => {
-	isDisplayed.value = false;
 	lastPromotion.value = Date.now();
 };
 </script>
