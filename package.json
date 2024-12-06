@@ -8,6 +8,7 @@
 	"scripts": {
 		"docs:build": "vitepress build",
 		"docs:dev": "vitepress dev",
+		"start": "vitepress dev",
 		"docs:preview": "vitepress preview",
 		"test": "vitest --dom",
 		"test:coverage": "vitest run --coverage"
@@ -16,9 +17,7 @@
 		"@morev/vue-transitions": "^3.0.2",
 		"@vue/compiler-dom": "^3.5.10",
 		"acorn-typescript": "^1.4.13",
-		"vitest": "^2.1.1"
-	},
-	"devDependencies": {
+		"vitest": "^2.1.1",
 		"@ckpack/vue-color": "^1.6.0",
 		"@kalimahapps/eslint-config": "^1.2.91",
 		"@kalimahapps/eslint-plugin-tailwind": "^1.1.0",

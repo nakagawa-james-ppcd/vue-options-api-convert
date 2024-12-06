@@ -19,16 +19,10 @@
 				</a>
 			</div>
 		</template>
-		<template #layout-bottom>
-			<ClientOnly>
-				<SafhaPromotion />
-			</ClientOnly>
-		</template>
 	</Layout>
 </template>
 
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme';
-import SafhaPromotion from './SafhaPromotion.vue';
 const { Layout } = DefaultTheme;
 </script>
