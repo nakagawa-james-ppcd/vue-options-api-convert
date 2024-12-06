@@ -258,7 +258,7 @@ worker.addEventListener('message', (event: any) => {
 		compositionOutput.value = code;
 		errorMessage.value = '';
 	} else {
-		errorMessage.value = code;
+		errorMessage.value = code + '\n' + status;
 	}
 
 	loading.value = false;
@@ -315,7 +315,7 @@ const processCode = () => {
 		// Slice from the error position to few characters after
 		// to highlight the error in the input code
 		if (!error.pos) {
-			errorMessage.value = error.message;
+			errorMessage.value = JSON.stringify(error);
 			return;
 		}
 

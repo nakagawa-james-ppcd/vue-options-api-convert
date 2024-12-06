@@ -1,4 +1,5 @@
-import { parse } from 'acorn';
+import * as acorn from 'acorn';
+import tsPlugin from 'acorn-typescript';
 import DataParser from './data';
 import MethodParser from './methods';
 import PropertiesParser from './props';
@@ -134,7 +135,16 @@ class Parser {
 		const results : {[key: string] : any} = {};
 		const propertiesName = Object.keys(this.callbacksMap);
 
-		const { properties } = exportDeclaration.declaration;
+		let properties;
+
+		if (exportDeclaration.declaration.type === 'ObjectExpression') {
+			properties = exportDeclaration.declaration.properties;
+		} else if (exportDeclaration.declaration.type === 'CallExpression') {
+			properties = exportDeclaration.declaration.arguments[0].properties;
+		} else {
+			throw new Error('Unexpected default export type encountered: Export was neither a plain object nor a function call')
+		}
+
 		for (const propertyName of propertiesName){
 			const property = properties.find((property: any) => {
 				const { name } = property.key;
@@ -271,7 +281,7 @@ class Parser {
 	 * @return {object} The parsed data object
 	 */
 	parse () {
-		this.ast = parse(this.input, {
+		this.ast = acorn.Parser.extend(tsPlugin()).parse(this.input, {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
 		});
